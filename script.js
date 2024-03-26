@@ -5,11 +5,11 @@ window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY
 
     if (scrollPosition >= content2.offsetTop) {
-        body.style.backgroundColor = '#c18e62'
+        body.style.backgroundColor = '#F6B7A2'
         featuresContainer.style.color = 'white'
     } else {
         body.style.backgroundColor = ''
-        featuresContainer.style.color = '#c18e62'
+        featuresContainer.style.color = '#F6B7A2'
     }
 })
 
