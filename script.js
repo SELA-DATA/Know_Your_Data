@@ -32,14 +32,13 @@ const getCurrentDateTime = () => {
     let year = date.getFullYear()
     let hrs = date.getHours()
 
-    return({dateString : `${day}-${month}-${year}` , time : hrs}) 
+    return({dateString : `${day}-${month}-${year}-${hrs}`}) 
 }
 
 const pageRedirect = () => {
     let date = btoa(getCurrentDateTime().dateString)
-    let time = btoa(getCurrentDateTime().time)
 
-    const urlString = `https://knowyourdata.streamlit.app/?date=${date}&time=${time}`
+    const urlString = `https://knowyourdata.streamlit.app/?date=${date}`
 
     window.location.href = urlString
     
